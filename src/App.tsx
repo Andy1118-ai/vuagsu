@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { AuthProvider } from './context/AuthContext';
 import { Header } from './components/organisms/Header';
 import { Footer } from './components/organisms/Footer';
+import { Chatbot } from './components/organisms/Chatbot';
 import { Home } from './pages/Home';
 import { Dogs } from './pages/Dogs';
 import { Services } from './pages/Services';
@@ -63,6 +64,7 @@ function App() {
                     </Routes>
                   </main>
                   <Footer />
+                  <Chatbot />
                 </>
               } />
             </Routes>
