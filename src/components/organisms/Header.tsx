@@ -9,6 +9,7 @@ const navigation = [
   { name: 'Dogs & Bloodlines', href: '/dogs' },
   { name: 'Services', href: '/services' },
   { name: 'Gallery', href: '/gallery' },
+  { name: 'Netflix Gallery', href: '/netflix-gallery' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
 ];

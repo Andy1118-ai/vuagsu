@@ -4,6 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Netflix colors
+        'netflix-black': '#141414',
+        'netflix-red': '#e50914',
+        'netflix-dark-gray': '#2f2f2f',
+        'netflix-gray': '#808080',
+        'netflix-light-gray': '#b3b3b3',
+        
         // German Shepherd coat colors
         shepherd: {
           black: '#1A1A1A',
@@ -51,6 +58,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
+        netflix: ['Helvetica Neue', 'Arial', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
@@ -61,6 +69,8 @@ export default {
         'glow': 'glow 2s ease-in-out infinite alternate',
         'tree-fade': 'treeFade 0.8s ease-out',
         'slideshow': 'slideshow 0.8s ease-in-out',
+        'netflix-scale': 'netflixScale 0.3s ease-out',
+        'netflix-fade': 'netflixFade 0.3s ease-in-out',
       },
       keyframes: {
         fadeIn: {
@@ -91,9 +101,20 @@ export default {
           '0%': { opacity: '0', transform: 'scale(1.05)' },
           '100%': { opacity: '1', transform: 'scale(1)' },
         },
+        netflixScale: {
+          '0%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(1.4)' },
+        },
+        netflixFade: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
       backdropBlur: {
         xs: '2px',
+      },
+      aspectRatio: {
+        '16/9': '16 / 9',
       },
     },
   },

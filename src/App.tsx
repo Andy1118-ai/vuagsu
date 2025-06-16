@@ -8,6 +8,7 @@ import { Home } from './pages/Home';
 import { Dogs } from './pages/Dogs';
 import { Services } from './pages/Services';
 import { Gallery } from './pages/Gallery';
+import { NetflixGalleryPage } from './pages/NetflixGalleryPage';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { ScheduleVisit } from './pages/ScheduleVisit';
@@ -36,6 +37,9 @@ function App() {
         <Router>
           <div className="min-h-screen bg-white">
             <Routes>
+              {/* Netflix Gallery Route */}
+              <Route path="/netflix-gallery" element={<NetflixGalleryPage />} />
+
               {/* Admin Routes */}
               <Route path="/admin/login" element={<AdminLogin />} />
               <Route path="/admin" element={<AdminLayout />}>
